@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+
+
+
+
+    
+
+    <header>
+        <div><img class="logo" src="tonhão (6) 3.png" alt="Logo"></div>
+        <div class="inicio">Inicio</div>
+        <div class="cadastro">
+            <a href="#" onclick="openModal('signup')">Cadastro</a>
+        </div>
+        <div class="cardapio">
+            <a href="cardapio.html" target="_self">Cardapio</a>
+        </div>
+        <div>
+            <a href="carrinho.html" target="_self">
+                <img class="bag" src="🦆 icon _Shopping bag_.png" alt="Shopping Bag">
+            </a>
+        </div>
+    </header>
+    
+    
+    
+    <!-- Usei chat gpt nessa parte do header apenas para o cadastro ficar bunitin :) -->
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">Fechar</button>
+            <img class="logo" src="tonhão (6) 3.png" alt="Logo">
+            <div id="signup-form">
+                <h2>Criar uma conta</h2>
+                
+                    <input type="text" name="name" placeholder="Nome Completo" required>
+                    <input type="text" name="phone" placeholder="Telefone" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="text" name="cpf" placeholder="CPF" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <input type="submit" value="Criar uma conta">
+                </form>
+                <p>Tem uma conta? <a href="#" class="toggle-link" onclick="toggleForm()">Entre</a></p>
+            </div>
+            <div id="login-form" style="display: none;">
+                <h2>Entrar</h2>
+                
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <input type="submit" value="Entrar">
+                </form>
+                <p>Não tem uma conta? <a href="#" class="toggle-link" onclick="toggleForm()">Cadastrar</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        
+        function openModal(formType) {
+            document.getElementById('signup-modal').style.display = 'flex';
+            if (formType === 'signup') {
+                document.getElementById('signup-form').style.display = 'block';
+                document.getElementById('login-form').style.display = 'none';
+            } else {
+                document.getElementById('signup-form').style.display = 'none';
+                document.getElementById('login-form').style.display = 'block';
+            }
+        }
+    
+        
+        function closeModal() {
+            document.getElementById('signup-modal').style.display = 'none';
+        }
+    
+       
+        function toggleForm() {
+            const signupForm = document.getElementById('signup-form');
+            const loginForm = document.getElementById('login-form');
+            if (signupForm.style.display === 'none') {
+                signupForm.style.display = 'block';
+                loginForm.style.display = 'none';
+            } else {
+                signupForm.style.display = 'none';
+                loginForm.style.display = 'block';
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+     <div class="banner">
+
+        <div class="txt">
+        <div class="txt1">OS MELHORES</div>
+        <div class="txt2">Hamburguers do <br> Brasil</div>
+        <div class="agora">
+            <a href="cardapio.html" target="_self" style="color: inherit; text-decoration: none;">PEÇA AGORA</a>
+        </div>
+    </div>
+        
+    </div>
+
+    <div class="pedidos">Mais pedidos</div>
+    <div class="anime">Anime Burgueres</div>
+
+    <div class="grid-container">
+        
+        <div class="grid-item1">
+            <img src="tonhão (3) 4.png" class="foto1" alt="">
+            <div class="quad1">
+                <div class="mash">Mashle Burguer</div>
+                <div class="price">R$25 <span>,99</span></div>
+            </div>
+            
+        </div>
+
+        
+        <div class="grid-item1">
+
+            
+            <img src="tonhão (20) 1 (1).png" class="foto2" alt="">
+            <div class="quad1">
+                <div class="mash">Jujutsu Burguer</div>
+                <div class="price">R$33 <span>,99</span></div>
+            </div>
+            
+
+        </div>
+
+
+        <div class="grid-item1">
+            <img src="tonhão (16) 1 (1).png" class="foto3" alt="">
+            <div class="quad1">
+                <div class="mash">Cowboy Burguer</div>
+                <div class="price">R$41 <span>,99</span></div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    
+    
+    <div class="anime">Game Burgueres</div>
+
+    <div class="grid-container">
+        
+        <div class="grid-item1">
+            <img src="tonhão (19) 1.png" class="foto1" alt="">
+            <div class="quad1">
+                <div class="mash">Brawl Burguer</div>
+                <div class="price">R$31 <span>,99</span></div>
+            </div>
+            
+        </div>
+
+        
+        <div class="grid-item1">
+
+            
+            <img src="image 5.png" class="foto2" alt="">
+            <div class="quad1">
+                <div class="mash">Over Burguer</div>
+                <div class="price">R$36 <span>,99</span></div>
+            </div>
+            
+
+        </div>
+
+
+        <div class="grid-item1">
+            <img src="image 8.png" class="foto3" alt="">
+            <div class="quad1">
+                <div class="mash">Blox Burguer</div>
+                <div class="price">R$37 <span>,99</span></div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    
+
+    <div class="cardapiocomp">
+        <a href="cardapio.html" target="_self" style="color: inherit; text-decoration: none;">Cardápio Completo</a>
+    </div>
+
+    
+
+</body>
+</html>

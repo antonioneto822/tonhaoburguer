@@ -1,0 +1,886 @@
+*{box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #F5EBDC;
+    color: #fff;
+    padding: 10px 20px;
+    height: 150px;
+  }
+
+
+
+
+/*Usei chat gpt aqui para o cadastro fica bunitin*/
+
+  .logo {
+    padding-bottom: 10px;
+}
+
+.inicio,
+.cadastro,
+.cardapio {
+    color: #502314;
+    font-family: 'Sahitya', serif; 
+    font-weight: bold; 
+    font-size: 50px;
+    padding-right: 190px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.cadastro a,
+.cardapio a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img.logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.modal-content input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.modal-content input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.modal-content p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.modal-content p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.modal-content p a:hover {
+    text-decoration: underline;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-btn:hover {
+    background-color: #999;
+}
+
+.toggle-link {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.banner{
+    width: 100%;
+    height: 480px;
+    background-color: #502314;
+    background-image: url(tonhão\ \(3\)\ 1.png);
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    
+}
+
+.txt{
+    padding-left: 800px;
+    font-size: 100px;
+    line-height: 1.1;
+
+    
+}
+
+.txt1{
+    color: #E6921F;
+    font-family: 'Sahitya', serif; 
+    font-weight: bold; 
+}
+
+.txt2{
+    color: #ffffff;
+    font-family: 'Sahitya', serif; 
+    font-weight: bold; 
+    line-height: 1;
+    
+}
+
+.agora{
+    width: 450px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    color: #502314;
+    font-family: 'Sahitya', serif; 
+    font-weight: bold; 
+    line-height: 1;
+
+}
+
+.pedidos{
+    color: #502314;
+    font-family: 'Sahitya', serif; 
+    font-weight: bold; 
+    line-height: 1;
+    font-size: 100px;
+    padding-left: 20px;
+}
+
+.anime{
+    color: #502314;
+    font-family: 'Sahitya', serif; 
+    font-weight: bold; 
+    line-height: 1;
+    font-size: 50px;
+    padding-left: 20px; 
+    padding-top: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px; 
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.grid-item {
+    background-color: #F2E5D4;
+    color: #502314;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.grid-item1 {
+    background-color: #F2E5D4;
+    color: #502314;
+    text-align: center;
+    padding: 20px;
+    height: 350px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.foto1{
+    padding-right: 30px;
+}
+
+.quad1{
+    height: 150px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+
+.mash{
+    color: #502314;
+    font-family: 'Sahitya', serif; 
+    font-weight: bold; 
+    line-height: 1;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+
+
+.price{
+    color: #D62300;
+    font-family: 'Sahitya', serif; 
+    font-weight: bold; 
+    line-height: 1;
+    font-size: 90px;
+    padding-top: 10px;
+}
+
+span{
+    color: #D62300;
+  transform: translateY(-30px);
+  display: inline-block;
+  font-size: 70px;
+}
+
+.all{
+    padding-bottom: 150px;
+}
+
+.cardapiocomp{
+    width: 600px;
+    height: 90px;
+    background-color: #E6921F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    color: #502314;
+    font-family: 'Sahitya', serif; 
+    font-weight: bold; 
+    line-height: 1;
+    margin-left: 600px;
+    margin-top: 60px;
+}
+
+
+
+
+.banner2{
+    width: 100%;
+    height: 480px;
+    background-color: #D62300;
+    background-image: url(tonhão\ \(34\)\ 1.png);
+    background-repeat: no-repeat;
+    padding-bottom: 30px;}
+
+    .txt3{
+        color: #ffffff;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        padding-top: 50px;
+    }
+    
+    .txt4{
+        color: #502314;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        
+    }
+    
+    .agora2{
+        width: 450px;
+        height: 90px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70px;
+        color: #502314;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+    
+    }
+
+    .card{
+        color: #502314;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 100px;
+        padding-left: 20px; 
+        padding-top: 20px;
+    }
+
+    .somos{
+        color: #502314;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 100px;
+        padding-left: 20px; 
+        padding-top: 20px;
+    }
+
+
+
+
+
+
+    
+    .signup-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .signup-content {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .signup-content img.logo {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .signup-content h2 {
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 28px;
+    }
+
+    .signup-content input[type="text"],
+    .signup-content input[type="email"],
+    .signup-content input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .signup-content input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+
+    .signup-content input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    .signup-content p {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #666;
+    }
+
+    .signup-content p a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .signup-content p a:hover {
+        text-decoration: underline;
+    }
+    
+
+
+
+    .laranja{
+        color: #E6921F;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .vermelho{
+        color: #502314;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 25px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+
+    .laranja2{
+        color: #E6921F;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 60px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .vermelho2{
+        color: #502314;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 60px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .locate{
+        display: flex;
+    }
+
+    .map{
+padding-top: 30px;
+padding-left: 30px;
+    }
+
+    .rua{
+        padding-bottom: 10px;
+        padding-left: 30px;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 20px;
+    }
+
+    .tell{
+        padding-top: 60px;
+        padding-left: 30px;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 30px;
+            }
+
+
+
+
+
+
+
+
+     .formulario {
+            width: 500px;
+            height: 90px;
+            background-color: #502314;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 53px;
+            color: #ffffff;
+            font-family: 'Sahitya', serif; 
+            font-weight: bold; 
+            line-height: 1;
+            margin-top: 30px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+        }
+
+        .modal-content h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 28px;
+        }
+
+        .modal-content input[type="text"],
+        .modal-content input[type="email"],
+        .modal-content textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .modal-content textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .modal-content input[type="submit"],
+        .modal-content .close-btn2 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+
+        .modal-content .close-btn2 {
+            background-color: #d9534f;
+        }
+
+        .modal-content input[type="submit"]:hover,
+        .modal-content .close-btn2:hover {
+            background-color: #45a049;
+        }
+
+        .modal-content .close-btn2:hover {
+            background-color: #c9302c;
+        }
+
+
+    .tell2{
+        padding-top: 45px;
+        padding-left: 30px;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 30px;
+            }
+
+            
+    .logo3{
+        padding-left: 85vh;
+    }
+
+    .container {
+        display: flex;        
+        justify-content: space-between; 
+        padding: 20px;
+    }
+    
+    .esquerda {
+        flex: 2;              
+        padding-right: 20px; 
+    }
+    
+    .direita {
+        flex: 1;              
+    }
+    
+    .pedido1 {
+        padding-top: 30px;
+        padding-left: 30px;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 50px;
+    }
+    
+    .adress {
+        padding-top: 30px;
+        padding-left: 20px;
+        display: flex;
+    }
+    
+    .rua {
+        padding-top: 35px;
+        padding-left: 20px;
+    }
+    
+    .rua1 {
+        color: #000000;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 40px;
+    }
+    
+    .rua2 {
+        color: #828282;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 40px;
+    }
+    
+    .trocar {
+        color: #D62300;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 25px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    
+    .padrao, .padrao2 {
+        padding-top: 60px;
+        padding-left: 30px;
+        width: 250px;
+        height: 150px;
+        background-color: #ffffff;
+        border: 2px solid black;
+        border-radius: 20px; 
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    
+    .padrao:hover, .padrao2:hover {
+        border-color: #D62300;
+    }
+    
+    .padrao:hover .pad, .padrao2:hover .pad2 {
+        color: #D62300;
+    }
+    
+    .pad {
+        color: #a09f9f;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 25px;
+    }
+    
+    .pad2 {
+        color: #a09f9f;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 25px;
+    }
+    
+    .hoje {
+        color: #828282;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 30px;
+    }
+    
+    .din {
+        color: #1E1E1E;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 25px;
+    }
+    
+    .entregas {
+        display: flex;           
+        gap: 20px;               
+        padding: 10px;
+    }
+    
+    .hr-grande{
+        border: 0;              
+        height: 2px;             
+        background-color: black; 
+        width: 60%;              
+        margin-left: 30px;
+    }
+
+    
+    
+    .pagamento1 {
+        color: #D62300;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        font-size: 60px;
+        padding-left: 20px; 
+        padding-top: 20px;
+    }
+    
+    .fazerpedido {
+        width: 600px;
+        height: 90px;
+        background-color: #D62300;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70px;
+        color: #FFF7F4;
+        font-family: 'Sahitya', serif; 
+        font-weight: bold; 
+        line-height: 1;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+    
+    .quadrado {
+        width: 500px;
+        height: 700px;
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    
+
+    .cav{
+       display: flex;
+       padding-top: 10px;
+    }
+
+    .car{
+        color: #D62300;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 30px;
+        padding-left: 20px;
+        
+    }
+
+    .card1{
+        color: #D62300;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 30px;
+        padding-left: 140px;
+        
+    }
+
+    .ani{
+        color: #3A231C;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 30px;
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+
+    .hr-pequeno{
+        border: 0;              
+        height: 2px;             
+        background-color: black; 
+        width: 90%;              
+        
+    }
+    
+    .mash2{
+        color: #1E1E1E;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    .price2{
+        color: #1E1E1E;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 30px;
+        padding-left: 70px;
+    }
+
+    .edit{
+        color: #D62300;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 25px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .remove{
+        color: #828282;
+        font-family: 'Sahitya', serif;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 25px;
+        padding-left: 60px;
+        padding-top: 20px;
+    }
